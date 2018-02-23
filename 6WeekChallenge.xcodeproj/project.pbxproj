@@ -8,11 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		6193F6AB2040774800AF50B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6193F6AA2040774800AF50B6 /* AppDelegate.swift */; };
-		6193F6AD2040774800AF50B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6193F6AC2040774800AF50B6 /* ViewController.swift */; };
 		6193F6B02040774800AF50B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6193F6AE2040774800AF50B6 /* Main.storyboard */; };
 		6193F6B22040774800AF50B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6193F6B12040774800AF50B6 /* Assets.xcassets */; };
 		6193F6B52040774800AF50B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6193F6B32040774800AF50B6 /* LaunchScreen.storyboard */; };
 		6193F6C02040774900AF50B6 /* _WeekChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6193F6BF2040774900AF50B6 /* _WeekChallengeTests.swift */; };
+		6193F6CF204077C200AF50B6 /* FullListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6193F6CE204077C200AF50B6 /* FullListTableViewController.swift */; };
+		6193F6D1204077CF00AF50B6 /* RandomizeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6193F6D0204077CF00AF50B6 /* RandomizeTableViewController.swift */; };
+		6193F6D5204078D700AF50B6 /* PersonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6193F6D4204078D700AF50B6 /* PersonController.swift */; };
+		6193F6D720408BD900AF50B6 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6193F6D620408BD900AF50B6 /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +31,6 @@
 /* Begin PBXFileReference section */
 		6193F6A72040774800AF50B6 /* 6WeekChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 6WeekChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6193F6AA2040774800AF50B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6193F6AC2040774800AF50B6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6193F6AF2040774800AF50B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6193F6B12040774800AF50B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6193F6B42040774800AF50B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +38,10 @@
 		6193F6BB2040774900AF50B6 /* 6WeekChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 6WeekChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6193F6BF2040774900AF50B6 /* _WeekChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _WeekChallengeTests.swift; sourceTree = "<group>"; };
 		6193F6C12040774900AF50B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6193F6CE204077C200AF50B6 /* FullListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullListTableViewController.swift; sourceTree = "<group>"; };
+		6193F6D0204077CF00AF50B6 /* RandomizeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomizeTableViewController.swift; sourceTree = "<group>"; };
+		6193F6D4204078D700AF50B6 /* PersonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonController.swift; sourceTree = "<group>"; };
+		6193F6D620408BD900AF50B6 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +83,10 @@
 		6193F6A92040774800AF50B6 /* 6WeekChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				6193F6AA2040774800AF50B6 /* AppDelegate.swift */,
-				6193F6AC2040774800AF50B6 /* ViewController.swift */,
-				6193F6AE2040774800AF50B6 /* Main.storyboard */,
-				6193F6B12040774800AF50B6 /* Assets.xcassets */,
-				6193F6B32040774800AF50B6 /* LaunchScreen.storyboard */,
-				6193F6B62040774800AF50B6 /* Info.plist */,
+				6193F6CD204077A700AF50B6 /* Model Controller */,
+				6193F6CC204077A100AF50B6 /* Model */,
+				6193F6CB2040779B00AF50B6 /* View Controllers */,
+				6193F6CA2040778900AF50B6 /* Resources */,
 			);
 			path = 6WeekChallenge;
 			sourceTree = "<group>";
@@ -94,6 +98,43 @@
 				6193F6C12040774900AF50B6 /* Info.plist */,
 			);
 			path = 6WeekChallengeTests;
+			sourceTree = "<group>";
+		};
+		6193F6CA2040778900AF50B6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6193F6AA2040774800AF50B6 /* AppDelegate.swift */,
+				6193F6B12040774800AF50B6 /* Assets.xcassets */,
+				6193F6B32040774800AF50B6 /* LaunchScreen.storyboard */,
+				6193F6B62040774800AF50B6 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6193F6CB2040779B00AF50B6 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6193F6AE2040774800AF50B6 /* Main.storyboard */,
+				6193F6CE204077C200AF50B6 /* FullListTableViewController.swift */,
+				6193F6D0204077CF00AF50B6 /* RandomizeTableViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		6193F6CC204077A100AF50B6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6193F6D620408BD900AF50B6 /* Person.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6193F6CD204077A700AF50B6 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6193F6D4204078D700AF50B6 /* PersonController.swift */,
+			);
+			path = "Model Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,8 +240,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6193F6AD2040774800AF50B6 /* ViewController.swift in Sources */,
+				6193F6D720408BD900AF50B6 /* Person.swift in Sources */,
+				6193F6CF204077C200AF50B6 /* FullListTableViewController.swift in Sources */,
 				6193F6AB2040774800AF50B6 /* AppDelegate.swift in Sources */,
+				6193F6D5204078D700AF50B6 /* PersonController.swift in Sources */,
+				6193F6D1204077CF00AF50B6 /* RandomizeTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,7 +399,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P2KUM2RUDP;
-				INFOPLIST_FILE = 6WeekChallenge/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/6WeekChallenge/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Isidore.-WeekChallenge";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -370,7 +414,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P2KUM2RUDP;
-				INFOPLIST_FILE = 6WeekChallenge/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/6WeekChallenge/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Isidore.-WeekChallenge";
 				PRODUCT_NAME = "$(TARGET_NAME)";
