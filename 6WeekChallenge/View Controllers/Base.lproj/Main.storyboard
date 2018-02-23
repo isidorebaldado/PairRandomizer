@@ -27,7 +27,7 @@
             </objects>
             <point key="canvasLocation" x="-1841" y="-96"/>
         </scene>
-        <!--Item-->
+        <!--Group-->
         <scene sceneID="nVT-XT-e0h">
             <objects>
                 <tableViewController id="R4V-Wm-B72" customClass="RandomizeTableViewController" customModule="_WeekChallenge" customModuleProvider="target" sceneMemberID="viewController">
@@ -73,7 +73,9 @@
                             <outlet property="delegate" destination="R4V-Wm-B72" id="rgL-5A-HpT"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="IGc-XT-2wf"/>
+                    <tabBarItem key="tabBarItem" title="Group" id="IGc-XT-2wf">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-20"/>
+                    </tabBarItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cuR-rW-dmI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -123,11 +125,13 @@
             </objects>
             <point key="canvasLocation" x="-252" y="-531"/>
         </scene>
-        <!--Item-->
+        <!--List-->
         <scene sceneID="gTt-79-Qxe">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aD4-l6-j6H" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="u8f-Ip-7xp"/>
+                    <tabBarItem key="tabBarItem" title="List" id="u8f-Ip-7xp">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-20"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tFJ-ix-O4S">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
